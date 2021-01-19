@@ -15,3 +15,6 @@ The User class is a model class with the following fields:
 | name   | (NOT NULL field)|
 | email  | (NOT NULL field)|
 | contact_nb| (NOT NULL field)|
+
+**Database Configuration**
+the MySQL database configuration details are given in the application.properties file
