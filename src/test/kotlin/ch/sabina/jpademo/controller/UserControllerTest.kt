@@ -21,8 +21,15 @@ class UserControllerTest{
 
     @Test
     @kotlin.Throws(Exception::class)
-    fun getHello() {
+    fun getUserOne() {
         mvc?.perform(MockMvcRequestBuilders.get("/user/1").accept(MediaType.APPLICATION_JSON))
+                ?.andExpect(status().isOk())
+
+    }
+    @Test
+    @kotlin.Throws(Exception::class)
+    fun getUser5() {
+        mvc?.perform(MockMvcRequestBuilders.get("/user/5").accept(MediaType.APPLICATION_JSON))
                 ?.andExpect(status().isOk())
 
     }
